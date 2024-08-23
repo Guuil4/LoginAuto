@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Senha - AutoPrime</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #000000; /* Fundo preto */
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden; /* Evita rolagem indesejada */
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            max-width: 500px;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            width: 200px; /* Ajuste o tamanho da logo conforme necessário */
+            height: auto;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #f06211;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .recovery-box {
+            background-color: #1a1a1a;
+            padding: 40px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .recovery-box h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #f06211;
+        }
+
+        .recovery-box input {
+            width: calc(100% - 22px); /* Ajusta a largura dos campos de entrada */
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .recovery-box input[type="email"] {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .recovery-box input[type="submit"] {
+            background-color: #f06211;
+            color: #000;
+            cursor: pointer;
+            border: none;
+        }
+
+        .recovery-box input[type="submit"]:hover {
+            background-color: #e55a00;
+        }
+
+        .back-to-login {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .back-to-login a {
+            color: #f06211;
+            text-decoration: none;
+        }
+
+        .back-to-login a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsividade */
+        @media (max-width: 600px) {
+            .logo img {
+                width: 150px; /* Reduz o tamanho da logo em telas menores */
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .recovery-box {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://raw.githubusercontent.com/thidenadai/AutoPrime/main/front/images/logo.png" alt="AutoPrime Logo">
+        </div>
+        <h1>Recuperação de Senha</h1>
+        <div class="recovery-box">
+            <h2>Recuperar Senha</h2>
+            <form>
+                <input type="email" placeholder="Digite seu e-mail" required aria-label="E-mail">
+                <input type="submit" value="Enviar Instruções">
+                <div class="back-to-login">
+                    <a href="login.html">Voltar ao Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
